@@ -1,0 +1,30 @@
+ <p id="notice"><%= notice %></p>
+
+<div id='header'>
+  <h1>Things To Do</h1>
+</div>
+<br>
+
+<div id="list">
+  <div id="list-header">
+    <h3 >What needs to be done</h3>
+  </div>
+
+    <ul>
+      <% @todo2_items.each do |todo2_item| %>
+      <li id="description"><%= todo2_item.description %></li>
+    </ul>
+        <br>
+
+    <div id="options">
+      <%= link_to 'Show', todo2_item %>
+      <%= link_to 'Edit', edit_todo2_item_path(todo2_item) %>
+      <%= link_to 'Destroy', todo2_item, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+    <% end %>
+</div>
+<br>
+
+<div id="add">
+<%= link_to 'Add more items', new_todo2_item_path %>
+</div>

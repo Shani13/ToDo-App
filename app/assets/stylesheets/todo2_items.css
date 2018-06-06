@@ -1,0 +1,51 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+h1 {
+  font-family: 'BioRhyme Expanded', serif;
+  color: pink;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+h2 {
+  font-family: 'BioRhyme Expanded', serif;
+  color: yellow;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 40px;
+
+}
+
+#list-header {
+  height: 420px;
+  width: 420px;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  color: purple;
+  background-image: url("postit.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#description {
+  font-size: 25px;
+  list-style: square, 4px;
+  font-family: 'Shadows Into Light', cursive;
+  display:list-item;
+  color: blue;
+  padding-top: 70px;
+}
+
+
+.field {
+  font-size: 20px;
+  font-style: italic;
+}
